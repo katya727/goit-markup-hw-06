@@ -679,3 +679,22 @@ flex-direction: row;
     fill: #f4f4fd;
 }
 }
+
+@media screen and (min-width: 768px){
+    .section-ph-list {
+            gap: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    }
+
+@media screen and (min-width: 1158px){
+.section-photo {
+    padding: 120px 0;
+
+}
+.section-ph-item{
+    width: calc((100% - 72px) / 4);
+}
+}
