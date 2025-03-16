@@ -57,6 +57,81 @@
             </li>
           </ul>
         </address>
+        <button class="burger-button" type="button" data-menu-open>
+          <svg class="burgur-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="button-mobile-menu-close" data-menu-close>
+            <svg class="button-mobile-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-manu-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-list">
+                <a class="mobile-menu-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-menu-list">
+                <a class="mobile-menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul class="mobile-menu-info">
+              <li class="mobile-info">
+                <a class="mobile-info-link tel" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-info">
+                <a class="mobile-info-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <section class="mobile-social">
+            <ul class="mobile-social-list">
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">
+                  <svg class="mobile-social-img" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">
+                  <svg class="mobile-social-img" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">
+                  <svg class="mobile-social-img" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">
+                  <svg class="mobile-social-img" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
     </header>
     <main>
@@ -71,9 +146,10 @@
           </button>
         </div>
       </section>
-      <!-- end hero-->
+      <!-- end hero -->
 
       <!-- section 1-->
+
       <section class="conteiner-section-one">
         <div class="container-box">
           <h2 class="visually-hidden">section-title</h2>
@@ -140,6 +216,10 @@
             <li class="section-ph-item">
               <img
                 src="./images-ph/markguerrero.jpg"
+                srcset="
+                  ./images-ph/markguerrero.jpg    1x,
+                  ./images-ph/markguerrero@2x.jpg 2x
+                "
                 alt="mark guerrero"
                 width="264"
                 height="260"
@@ -182,6 +262,10 @@
             <li class="section-ph-item">
               <img
                 src="./images-ph/tomford.jpg"
+                srcset="
+                  ./images-ph/tomford.jpg    1x,
+                  ./images-ph/tomford@2x.jpg 2x
+                "
                 alt="tom ford"
                 width="264"
                 height="260"
@@ -223,7 +307,11 @@
             </li>
             <li class="section-ph-item">
               <img
-                src="./images-ph/camilagrsia.jpg"
+                src="./images-ph/camilagarsia.jpg"
+                srcset="
+                  ./images-ph/camilagarsia.jpg    1x,
+                  ./images-ph/camilagarsia@2x.jpg 2x
+                "
                 alt="camila garcia"
                 width="264"
                 height="260"
@@ -266,6 +354,10 @@
             <li class="section-ph-item">
               <img
                 src="./images-ph/danielwilson.jpg"
+                srcset="
+                  ./images-ph/danielwilson.jpg    1x,
+                  ./images-ph/danielwilson@2x.jpg 2x
+                "
                 alt="daniel wilson"
                 width="264"
                 height="260"
@@ -312,7 +404,7 @@
       <!--  end section photo -->
 
       <!-- section portfolio-->
-      <section class="portfolio">
+      <!-- <section class="portfolio">
         <div class="container container-portfolio">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -432,12 +524,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- end section portfolio-->
 
     <!-- region footer -->
-    <footer class="section-footer-info">
+    <!-- <footer class="section-footer-info">
       <div class="container_">
         <div class="container-footer">
           <a class="footer-logo-style" href="./index.html"
@@ -504,11 +596,11 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!--  end regio footer -->
 
     <!-- region buckdrop -->
-    <div class="backdrop is-open">
+    <!-- <div class="backdrop is-open">
       <div class="modal-window">
         <button class="close-button" type="button">
           <svg class="close-button-icon" width="8" height="8">
@@ -601,7 +693,10 @@
           <button class="button-checkbox" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <!-- end region buckdrop -->
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
