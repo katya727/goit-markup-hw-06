@@ -1078,17 +1078,18 @@ width: 356px;
 
 @media screen and (min-width: 768px) {
     .section-footer-info{
-            padding: 0 108px;
-                padding-top: 96px;
-                padding-bottom: 96px;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
     .container_ {
- 
+        padding: 0 108px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 72px 0;
-        
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
         
 }
 
